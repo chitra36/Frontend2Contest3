@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.js">
+    
+</head>
+<body>
+   
+<div>
+    <button class="button" onclick="create_tr('table_body')">Add A New Row</button>
+</div>
+
+
+<div class="container">
+  <table class="_table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Student Name</th>
+        <th>Student Roll</th>
+        <th>Subject</th>
+        <th>Marks</th>
+        <th>Marked By</th>
+        <th>Save</th>
+       
+      </tr>
+    </thead>
+    <tbody id="table_body" style="color: black;">
+      <tr>
+          <td>
+             <input type="text" class="form_control">
+          </td>
+          <td>
+              <input type="text" class="form_control" >
+          </td>
+          <td>
+              <input type="text" class="form_control" >
+          </td>
+          <td>
+              <input type="text" class="form_control" >
+           </td>
+          <td>
+             <input type="text" class="form_control" >
+          </td>
+          <td>
+             <input type="text" class="form_control" >
+           </td>
+        
+        <!-- <th width="50px">
+            <div class="action_container">
+              <button class="success" onclick="create_tr('table_body')">
+                <i class="fa fa-plus"></i>
+              </button>
+            </div>
+          </th> -->
+            <th width="50px">
+              <div class="action_container">
+               <button  onclick="create_tr('table_body')">Save</button>
+             </div>
+            </th>
+       </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
